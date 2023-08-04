@@ -1,0 +1,170 @@
+@font-face {
+    font-family: iranyekan;
+    src: url("../iranyekan/woff/IRANYekanWebLight.woff") format("truetype"),
+    url("../iranyekan/woff/IRANYekanWebMedium.woff") format("truetype"),
+    url("../iranyekan/woff/IRANYekanWebRegular.woff") format("truetype"),
+    url("../iranyekan/woff/IRANYekanWebThin.woff") format("truetype");
+}
+
+:root {
+    --bgColor: #f4f4f4;
+}
+
+* {
+    font-family: iranyekan, "sans-serif";
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition: .2s;
+    border: none;
+    outline: none;
+    overflow-x: hidden;
+}
+
+header {
+
+    width: 100%;
+    height: 5rem;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#containerInfo {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    max-height: 350px;
+    justify-content: space-between;
+    border-bottom: 4px solid var(--bgColor);
+    padding-bottom: 1rem;
+}
+
+.imgProduct {
+    text-align: center;
+    margin-right: 5rem;
+    width: 25%;
+    border: 2px solid var(--bgColor);
+    border-radius: 5px;
+}
+
+.imgProduct img {
+    width: 80%;
+    max-height: 315px;
+}
+
+
+.propertyProduct {
+    width: 25%;
+}
+
+.propertyProduct .detailsProduct {
+    margin-top: 3rem;
+}
+
+.propertyProduct .detailsProduct :is(h4 , p) {
+    margin-bottom: 1rem;
+}
+
+.addCart {
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--bgColor);
+    margin-left: 5rem;
+    border: 2px solid var(--bgColor);
+    border-radius: 5px;
+}
+
+.addCart .btn {
+    text-align: center;
+    padding-top: 8px;
+    width: 60%;
+    height: 2rem;
+    margin-top: 1rem;
+    background: #0000ff;
+    border-radius: 5px;
+    color: white;
+}
+
+#container-comments {
+    width: 100%;
+    display: flex;
+
+}
+
+#container-comments .comment {
+    width: 65%;
+    margin: 3rem 3rem 3rem 0;
+}
+
+#container-comments .commentBox {
+    margin-top: 1rem;
+    width: 90%;
+    height: 20rem;
+    border: 4px solid var(--bgColor);
+    border-radius: 10px;
+}
+
+#container-comments .comment .commentBox div {
+    padding: 2rem 5rem 0 0;
+    width: 80%;
+}
+
+#container-comments .comment .commentBox div h5 {
+    width: 80%;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid var(--bgColor);
+}
+
+#container-comments .comment .commentBox div p {
+    width: 100%;
+    padding: 30px 0 30px 0;
+    border-bottom: 2px solid black;
+
+}
+
+#container-comments .saveCommentUser {
+    width: 25%;
+    margin: 3rem 3rem 3rem 0;
+
+}
+
+#container-comments .saveCommentUser .commentBox textarea {
+    width: 99%;
+    min-height: 12rem;
+}
+
+#container-comments .saveCommentUser .commentBox textarea::placeholder {
+    padding: 1rem;
+    font-size: 15px;
+}
+
+#container-comments .saveCommentUser .commentBox div {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#container-comments .saveCommentUser .commentBox div button {
+    text-align: center;
+    padding-top: 8px;
+    width: 80%;
+    height: 3rem;
+    margin-top: 2rem;
+    background: #0000ff;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
